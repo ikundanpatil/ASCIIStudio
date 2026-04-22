@@ -58,7 +58,7 @@ export function SpotifyPlayer() {
   const [tracks, setTracks] = useState<SpotifyTrack[]>([]);
   const [playlists, setPlaylists] = useState<SpotifyPlaylist[]>([]);
   const [recent, setRecent] = useState<SpotifyTrack[]>([]);
-  const searchTimer = useRef<number>();
+  const searchTimer = useRef<number | undefined>(undefined);
 
   const { state, volume, togglePlay, next, previous, seek, setVolume, playTrack } =
     useSpotifyPlayer(logged);
