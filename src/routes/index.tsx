@@ -6,22 +6,22 @@ import { AppHeader } from "@/components/app-header";
 import { ImageToAscii } from "@/components/image-to-ascii";
 import { TextToAscii } from "@/components/text-to-ascii";
 import { Gallery } from "@/components/gallery";
-import { SpotifyPlayer } from "@/components/spotify-player";
+import { MusicLibrary } from "@/components/music-library";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "ASCII Studio — Image & Text to ASCII Art with Spotify" },
+      { title: "ASCII Studio — Image & Text to ASCII Art" },
       {
         name: "description",
         content:
-          "Convert images and text to beautiful ASCII art. Listen to Spotify while you create. Free, fast, browser-based.",
+          "Convert images and text to beautiful ASCII art with a built-in royalty-free music player. Free, fast, browser-based.",
       },
       { property: "og:title", content: "ASCII Studio" },
       {
         property: "og:description",
-        content: "Image & text to ASCII art with built-in Spotify player.",
+        content: "Image & text to ASCII art with a built-in royalty-free song library.",
       },
     ],
   }),
@@ -44,7 +44,7 @@ function Index() {
           </h2>
           <p className="text-muted-foreground mt-1.5 text-sm md:text-base max-w-2xl">
             Upload an image or type text, tweak the look, then save and share. With a built-in
-            Spotify player for the right vibe.
+            royalty-free music player for the right vibe.
           </p>
         </div>
 
@@ -72,13 +72,13 @@ function Index() {
           </TabsContent>
         </Tabs>
 
-        {/* Spotify */}
-        <section aria-label="Spotify player">
-          <SpotifyPlayer />
+        {/* Music */}
+        <section aria-label="Music player">
+          <MusicLibrary />
         </section>
 
         <footer className="text-center text-xs text-muted-foreground py-4">
-          Built with ❤ — uses Spotify Web Playback SDK (Premium required for playback).
+          Built with ❤ — music by Kevin MacLeod (incompetech.com), licensed under CC-BY 4.0.
         </footer>
       </main>
     </div>
