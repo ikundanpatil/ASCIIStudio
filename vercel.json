@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "framework": "other",
+  "framework": "tanstack-start",
   "outputDirectory": "dist/server",
   "functions": {
     "api/**/*.js": {
