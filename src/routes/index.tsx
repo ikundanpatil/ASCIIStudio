@@ -37,15 +37,23 @@ function Index() {
       <AppHeader />
 
       <main className="mx-auto max-w-[1600px] px-4 md:px-6 py-6 space-y-6">
-        {/* Hero */}
-        <div className="rounded-2xl p-6 md:p-8 bg-gradient-to-br from-primary/15 via-accent/30 to-transparent border border-primary/20">
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
-            Turn anything into <span className="text-spotify">ASCII art</span>
+        {/* Hero — Awwwards style */}
+        <section className="relative overflow-hidden rounded-2xl border border-border bg-card noise-bg p-8 md:p-14">
+          <div className="flex items-center gap-2 mb-5">
+            <span className="inline-block h-2 w-2 rounded-full bg-accent" />
+            <span className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground font-mono">
+              v1.0 — Browser-based
+            </span>
+          </div>
+          <h2 className="font-display font-bold tracking-[-0.04em] leading-[0.95] text-4xl md:text-6xl lg:text-7xl">
+            Turn anything into
+            <br />
+            <span className="italic text-accent">ASCII</span> art.
           </h2>
-          <p className="text-muted-foreground mt-1.5 text-sm md:text-base max-w-2xl">
-            Upload an image or type text, tweak the look, then save and share.
+          <p className="text-muted-foreground mt-6 text-sm md:text-base max-w-xl leading-relaxed">
+            Upload an image or type text, tweak the look, then save and share. No sign-up. All in your browser.
           </p>
-        </div>
+        </section>
 
         {/* Tabs */}
         <Tabs defaultValue="image" className="space-y-4">
