@@ -22,6 +22,28 @@ export function MusicToggle() {
     const a = audioRef.current;
     const onEnd = () => setPlaying(false);
     a.addEventListener("pause", onEnd);
+
+    // Try autoplay immediately (works if browser allows it)
+    a.play()
+      .then(() => setPlaying(true))
+      .catch(() => {
+        // Blocked — fall back to starting on first user interaction
+        const startOnInteract = () => {
+          a.play()
+            .then(() => setPlaying(true))
+            .catch(() => {});
+          cleanup();
+        };
+        const cleanup = () => {
+          window.removeEventListener("pointerdown", startOnInteract);
+          window.removeEventListener("keydown", startOnInteract);
+          window.removeEventListener("touchstart", startOnInteract);
+        };
+        window.addEventListener("pointerdown", startOnInteract, { once: true });
+        window.addEventListener("keydown", startOnInteract, { once: true });
+        window.addEventListener("touchstart", startOnInteract, { once: true });
+      });
+
     return () => {
       a.removeEventListener("pause", onEnd);
       a.pause();
