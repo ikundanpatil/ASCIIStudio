@@ -1,22 +1,5 @@
 {
   "buildCommand": "npm run build",
   "framework": "tanstack-start",
-  "outputDirectory": "dist/server",
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs20.x",
-      "memory": 1024,
-      "maxDuration": 30
-    }
-  },
-  "routes": [
-    {
-      "src": "/assets/(.*)",
-      "dest": "/dist/client/assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/api/index.js"
-    }
-  ]
+  "outputDirectory": "dist/server"
 }
