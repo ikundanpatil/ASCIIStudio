@@ -1,0 +1,28 @@
+{
+  "buildCommand": "npm run build",
+  "framework": "other",
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs20.x",
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  },
+  "static": [
+    {
+      "src": "dist/client/assets",
+      "dest": "/assets"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/dist/client/assets/$1",
+      "status": 200
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api"
+    }
+  ]
+}
