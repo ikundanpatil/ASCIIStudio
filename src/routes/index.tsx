@@ -6,7 +6,7 @@ import { AppHeader } from "@/components/app-header";
 import { ImageToAscii } from "@/components/image-to-ascii";
 import { TextToAscii } from "@/components/text-to-ascii";
 import { Gallery } from "@/components/gallery";
-import { MusicLibrary } from "@/components/music-library";
+
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 export const Route = createFileRoute("/")({
@@ -16,12 +16,12 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Convert images and text to beautiful ASCII art with a built-in royalty-free music player. Free, fast, browser-based.",
+          "Convert images and text to beautiful ASCII art. Free, fast, browser-based.",
       },
       { property: "og:title", content: "ASCII Studio" },
       {
         property: "og:description",
-        content: "Image & text to ASCII art with a built-in royalty-free song library.",
+        content: "Image & text to ASCII art — free and browser-based.",
       },
     ],
   }),
@@ -43,8 +43,7 @@ function Index() {
             Turn anything into <span className="text-spotify">ASCII art</span>
           </h2>
           <p className="text-muted-foreground mt-1.5 text-sm md:text-base max-w-2xl">
-            Upload an image or type text, tweak the look, then save and share. With a built-in
-            royalty-free music player for the right vibe.
+            Upload an image or type text, tweak the look, then save and share.
           </p>
         </div>
 
@@ -72,13 +71,8 @@ function Index() {
           </TabsContent>
         </Tabs>
 
-        {/* Music */}
-        <section aria-label="Music player">
-          <MusicLibrary />
-        </section>
-
         <footer className="text-center text-xs text-muted-foreground py-4">
-          Built with ❤ — music by Kevin MacLeod (incompetech.com), licensed under CC-BY 4.0.
+          Built with ❤ — convert images & text to ASCII art in your browser.
         </footer>
       </main>
     </div>
