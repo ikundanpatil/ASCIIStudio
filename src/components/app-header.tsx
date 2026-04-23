@@ -37,7 +37,7 @@ export function AppHeader() {
           <div className="leading-tight">
             <h1 className="font-bold text-base md:text-lg tracking-tight">ASCII Studio</h1>
             <p className="text-[10px] md:text-xs text-muted-foreground -mt-0.5">
-              Art · Text · Spotify
+              Art · Text · Music
             </p>
           </div>
         </Link>
@@ -67,8 +67,8 @@ export function AppHeader() {
                   PNG.
                 </p>
                 <p>
-                  <strong>Spotify:</strong> Connect your Premium account, search and play any track.
-                  Use ← → arrow keys for previous/next.
+                  <strong>Music:</strong> Pick a track from the built-in royalty-free library.
+                  Use ← → arrow keys for previous/next, space to play/pause.
                 </p>
               </div>
             </DialogContent>
