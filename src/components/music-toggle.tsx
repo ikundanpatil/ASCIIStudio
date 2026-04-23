@@ -8,7 +8,7 @@ const TRACK = {
   title: "Sunflower",
   artist: "Post Malone, Swae Lee",
   // Placeholder: short preview-style URL. Swap with your hosted MP3.
-  audioUrl: "https://audio.com/mitch-s-baby-1/audio/post-malone-swae-lee-sunflower",
+  audioUrl: "https://proposed-brown-gjw5afoo4y.edgeone.app",
 };
 
 export function MusicToggle() {
