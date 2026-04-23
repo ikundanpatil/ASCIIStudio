@@ -6,7 +6,7 @@ import { AppHeader } from "@/components/app-header";
 import { ImageToAscii } from "@/components/image-to-ascii";
 import { TextToAscii } from "@/components/text-to-ascii";
 import { Gallery } from "@/components/gallery";
-
+import { MusicToggle } from "@/components/music-toggle";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 export const Route = createFileRoute("/")({
@@ -75,6 +75,8 @@ function Index() {
           Built with ❤ — convert images & text to ASCII art in your browser.
         </footer>
       </main>
+
+      <MusicToggle />
     </div>
   );
 }
