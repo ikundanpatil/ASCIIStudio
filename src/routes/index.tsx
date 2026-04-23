@@ -75,6 +75,8 @@ function Index() {
           Built with ❤ — convert images & text to ASCII art in your browser.
         </footer>
       </main>
+
+      <MusicToggle />
     </div>
   );
 }

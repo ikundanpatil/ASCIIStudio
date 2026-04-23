@@ -31,63 +31,68 @@
   --color-ring: var(--ring);
   --color-spotify: var(--spotify);
   --color-spotify-foreground: var(--spotify-foreground);
-  --font-mono: ui-monospace, "JetBrains Mono", "Fira Code", Menlo, Monaco, Consolas, monospace;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Fira Code", Menlo, Monaco, Consolas, monospace;
 }
 
+/* Light theme — warm off-white, ink black, electric lime accent */
 :root {
-  --radius: 0.75rem;
-  --background: oklch(0.98 0.005 150);
-  --foreground: oklch(0.18 0.02 150);
+  --radius: 0.5rem;
+  --background: oklch(0.97 0.008 95);
+  --foreground: oklch(0.14 0.01 80);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.02 150);
+  --card-foreground: oklch(0.14 0.01 80);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.02 150);
-  --primary: oklch(0.72 0.19 145);
-  --primary-foreground: oklch(0.15 0.02 150);
-  --secondary: oklch(0.95 0.01 150);
-  --secondary-foreground: oklch(0.2 0.02 150);
-  --muted: oklch(0.95 0.01 150);
-  --muted-foreground: oklch(0.5 0.02 150);
-  --accent: oklch(0.93 0.04 145);
-  --accent-foreground: oklch(0.2 0.05 145);
+  --popover-foreground: oklch(0.14 0.01 80);
+  --primary: oklch(0.88 0.21 115);
+  --primary-foreground: oklch(0.14 0.01 80);
+  --secondary: oklch(0.94 0.01 90);
+  --secondary-foreground: oklch(0.18 0.01 80);
+  --muted: oklch(0.94 0.01 90);
+  --muted-foreground: oklch(0.45 0.01 80);
+  --accent: oklch(0.93 0.06 115);
+  --accent-foreground: oklch(0.18 0.05 115);
   --destructive: oklch(0.6 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.9 0.01 150);
-  --input: oklch(0.92 0.01 150);
-  --ring: oklch(0.72 0.19 145);
-  --spotify: oklch(0.72 0.19 145);
-  --spotify-foreground: oklch(1 0 0);
-  --gradient-spotify: linear-gradient(135deg, oklch(0.72 0.19 145), oklch(0.62 0.18 155));
-  --gradient-hero: linear-gradient(135deg, oklch(0.72 0.19 145 / 0.15), oklch(0.5 0.2 280 / 0.1));
-  --shadow-glow: 0 0 40px -10px oklch(0.72 0.19 145 / 0.4);
-  --shadow-elegant: 0 10px 40px -10px oklch(0.18 0.02 150 / 0.15);
+  --border: oklch(0.88 0.01 90);
+  --input: oklch(0.92 0.01 90);
+  --ring: oklch(0.88 0.21 115);
+  --spotify: oklch(0.88 0.21 115);
+  --spotify-foreground: oklch(0.14 0.01 80);
+  --gradient-spotify: linear-gradient(135deg, oklch(0.92 0.2 115), oklch(0.82 0.22 120));
+  --gradient-hero: linear-gradient(135deg, oklch(0.88 0.21 115 / 0.18), oklch(0.7 0.18 60 / 0.08));
+  --shadow-glow: 0 0 50px -8px oklch(0.88 0.21 115 / 0.45);
+  --shadow-elegant: 0 20px 60px -20px oklch(0.14 0.01 80 / 0.18);
 }
 
+/* Dark — Awwwards near-black with electric lime */
 .dark {
-  --background: oklch(0.13 0.01 150);
-  --foreground: oklch(0.98 0.005 150);
-  --card: oklch(0.17 0.012 150);
-  --card-foreground: oklch(0.98 0.005 150);
-  --popover: oklch(0.17 0.012 150);
-  --popover-foreground: oklch(0.98 0.005 150);
-  --primary: oklch(0.72 0.19 145);
-  --primary-foreground: oklch(0.13 0.01 150);
-  --secondary: oklch(0.22 0.015 150);
-  --secondary-foreground: oklch(0.98 0.005 150);
-  --muted: oklch(0.22 0.015 150);
-  --muted-foreground: oklch(0.65 0.015 150);
-  --accent: oklch(0.28 0.05 145);
-  --accent-foreground: oklch(0.95 0.02 145);
+  --background: oklch(0.11 0.005 95);
+  --foreground: oklch(0.96 0.01 95);
+  --card: oklch(0.15 0.006 95);
+  --card-foreground: oklch(0.96 0.01 95);
+  --popover: oklch(0.15 0.006 95);
+  --popover-foreground: oklch(0.96 0.01 95);
+  --primary: oklch(0.9 0.22 118);
+  --primary-foreground: oklch(0.11 0.005 95);
+  --secondary: oklch(0.2 0.008 95);
+  --secondary-foreground: oklch(0.96 0.01 95);
+  --muted: oklch(0.2 0.008 95);
+  --muted-foreground: oklch(0.65 0.01 95);
+  --accent: oklch(0.25 0.06 118);
+  --accent-foreground: oklch(0.95 0.15 118);
   --destructive: oklch(0.65 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.25 0.012 150);
-  --input: oklch(0.25 0.012 150);
-  --ring: oklch(0.72 0.19 145);
-  --spotify: oklch(0.72 0.19 145);
-  --spotify-foreground: oklch(0.13 0.01 150);
-  --gradient-hero: linear-gradient(135deg, oklch(0.72 0.19 145 / 0.18), oklch(0.5 0.2 280 / 0.12));
-  --shadow-glow: 0 0 50px -10px oklch(0.72 0.19 145 / 0.5);
-  --shadow-elegant: 0 10px 40px -10px oklch(0 0 0 / 0.5);
+  --border: oklch(0.22 0.008 95);
+  --input: oklch(0.22 0.008 95);
+  --ring: oklch(0.9 0.22 118);
+  --spotify: oklch(0.9 0.22 118);
+  --spotify-foreground: oklch(0.11 0.005 95);
+  --gradient-spotify: linear-gradient(135deg, oklch(0.9 0.22 118), oklch(0.78 0.2 125));
+  --gradient-hero: linear-gradient(135deg, oklch(0.9 0.22 118 / 0.2), oklch(0.7 0.18 60 / 0.08));
+  --shadow-glow: 0 0 60px -8px oklch(0.9 0.22 118 / 0.55);
+  --shadow-elegant: 0 20px 60px -20px oklch(0 0 0 / 0.6);
 }
 
 @layer base {
@@ -97,7 +102,13 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: var(--font-sans);
+    font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
   }
 }
 
@@ -121,11 +132,32 @@
   box-shadow: var(--shadow-elegant);
 }
 
+/* Subtle noise / grain — Awwwards staple */
+.noise-bg {
+  position: relative;
+}
+.noise-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/></svg>");
+}
+
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px -5px oklch(0.72 0.19 145 / 0.4); }
-  50% { box-shadow: 0 0 30px -5px oklch(0.72 0.19 145 / 0.7); }
+  0%, 100% { box-shadow: 0 0 20px -5px oklch(0.9 0.22 118 / 0.4); }
+  50% { box-shadow: 0 0 32px -5px oklch(0.9 0.22 118 / 0.75); }
 }
 
 .animate-pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes vinyl-spin {
+  to { transform: rotate(360deg); }
+}
+.animate-vinyl {
+  animation: vinyl-spin 6s linear infinite;
 }
