@@ -12,16 +12,16 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "ASCII Studio — Image & Text to ASCII Art" },
+      { title: "ASCII Studio — Turn Images & Text into ASCII Art" },
       {
         name: "description",
         content:
-          "Convert images and text to beautiful ASCII art. Free, fast, browser-based.",
+          "Free browser-based ASCII art generator. Convert any image or text into ASCII, customize the look, and save to your gallery — no sign-up, instant preview.",
       },
-      { property: "og:title", content: "ASCII Studio" },
+      { property: "og:title", content: "ASCII Studio — Turn Images & Text into ASCII Art" },
       {
         property: "og:description",
-        content: "Image & text to ASCII art — free and browser-based.",
+        content: "Free browser-based ASCII art generator. Convert any image or text into ASCII art instantly.",
       },
     ],
   }),
