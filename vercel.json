@@ -1,5 +1,5 @@
 {
   "buildCommand": "npm run build",
   "framework": "tanstack-start",
-  "outputDirectory": "dist/server"
+  "outputDirectory": ".output"
 }
