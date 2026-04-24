@@ -40,19 +40,28 @@ function Index() {
         {/* Hero — Awwwards style */}
         <section className="relative overflow-hidden rounded-2xl border border-border bg-card noise-bg p-8 md:p-14">
           <div className="flex items-center gap-2 mb-5">
-            <span className="inline-block h-2 w-2 rounded-full bg-accent" />
+            <span className="inline-block h-2 w-2 rounded-full bg-accent animate-pulse" />
             <span className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground font-mono">
-              v1.0 — Browser-based
+              v1.0 — Free · Browser-based · No sign-up
             </span>
           </div>
           <h2 className="font-display font-bold tracking-[-0.04em] leading-[0.95] text-4xl md:text-6xl lg:text-7xl">
-            Turn anything into
+            Turn images &amp; text into
             <br />
             <span className="italic text-accent">ASCII</span> art.
           </h2>
-          <p className="text-muted-foreground mt-6 text-sm md:text-base max-w-xl leading-relaxed">
-            Upload an image or type text, tweak the look, then save and share. No sign-up. All in your browser.
+          <p className="text-muted-foreground mt-6 text-sm md:text-base max-w-2xl leading-relaxed">
+            ASCII Studio is a creative playground for designers, developers, and curious makers.
+            Drop in any photo or type a phrase, fine-tune the characters, contrast and width — then
+            save your creations to a personal gallery and export them as text or PNG. Everything runs
+            locally in your browser. No uploads. No accounts. Just art.
           </p>
+          <div className="mt-7 flex flex-wrap gap-2 text-[11px] font-mono uppercase tracking-wider text-muted-foreground">
+            <span className="px-3 py-1.5 rounded-full border border-border">Image → ASCII</span>
+            <span className="px-3 py-1.5 rounded-full border border-border">Text → ASCII</span>
+            <span className="px-3 py-1.5 rounded-full border border-border">Save & Export</span>
+            <span className="px-3 py-1.5 rounded-full border border-border">100% Private</span>
+          </div>
         </section>
 
         {/* Tabs */}
